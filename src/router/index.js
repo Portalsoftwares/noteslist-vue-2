@@ -4,12 +4,12 @@ import NotesView from '../Views/NotesView.vue';
 import StatsView from '../Views/StatsView.vue';
 import EditNoteView from '../Views/EditNoteView.vue';
 import AuthView from '../Views/AuthView.vue';
-
+import AboutView from '../Views/AuthView.vue';
 const routes = [
   {
     path: '/',
-    component: NotesView,
-    name: 'notes'
+    component: AboutView,
+    name: 'about'
   },
   {
     path: '/edit-note/:id',
@@ -25,6 +25,11 @@ const routes = [
     path: '/auth',
     component: AuthView,
     name: 'auth'
+  },
+  {
+    path: '/about',
+    component: AboutView,
+    name: 'about'
   }
 ];
 

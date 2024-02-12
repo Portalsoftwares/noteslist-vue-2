@@ -48,10 +48,11 @@ export const useAuthStore = defineStore('authStore', () => {
         // Signed in
         const user = userCredential.user;
         console.log(user);
-        // ...
+        router.push({ name: 'notes' });
       })
       .catch((error) => {
         console.log(error.message);
+        router.push({ name: 'notes' });
       });
   };
 
